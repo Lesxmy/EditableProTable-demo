@@ -62,7 +62,7 @@ export default function App() {
           onBlur: () => {
             setTimeout(() => {
               // 每次失焦发送请求获取数据赋值给状态
-              editableFormRef.current?.setRowData?.(rowKey, {
+              editableFormRef.current?.setRowData?.(rowKey as string, {
                 name: "chammy"
               });
             }, 1000);
