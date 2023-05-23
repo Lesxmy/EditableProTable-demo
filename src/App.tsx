@@ -140,13 +140,13 @@ export default function App() {
         <Button
           type="primary"
           onClick={() => {
-            // actionRef.current?.addEditRecord?.(
-            //   {
-            //     id: (Math.random() * 1000000).toFixed(0),
-            //     title: "新的一行"
-            //   },
-            //   { position: "top", newRecordType: "dataSource" }
-            // );
+            actionRef.current?.addEditRecord?.(
+              {
+               id: (Math.random() * 1000000).toFixed(0),
+                title: "新的一行"
+               },
+              { position: "top", newRecordType: "dataSource" }
+           );
           }}
           icon={<PlusOutlined />}
         >
